@@ -17,12 +17,12 @@ if test "${DOWNSTREAM_TOKEN:-}" != ""; then
 fi
 if test "${DRONE_SERVER:-}" = ""; then
   echo "missing DRONE_SERVER env var"
-  echo "=> miss drone_server secret in configuration ?"
+  echo "=> miss downstream_server secret in configuration ?"
   exit 1
 fi
 if test "${DRONE_TOKEN:-}" = ""; then
   echo "missing DRONE_TOKEN env var"
-  echo "=> miss drone_server secret in configuration ?"
+  echo "=> miss downstream_token secret in configuration ?"
   exit 1
 fi
 
